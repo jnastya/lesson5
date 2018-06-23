@@ -1,5 +1,6 @@
 class ClientsController < ApplicationController
 
+layout 'landing' 
 
   # GET /clients/new
   def new
