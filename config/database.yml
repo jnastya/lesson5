@@ -13,8 +13,8 @@ default: &default
 development:
   <<: *default
   database: appname_development
-  username: postgress
-  password: postgress
+  username: postgres
+  password: postgres
   host: 127.0.0.1
 
 # Warning: The database defined as "test" will be erased and
@@ -23,6 +23,6 @@ development:
 test:
   <<: *default
   database: appname_test
-  username: postgress
-  password: postgress
+  username: postgres
+  password: postgres
   host: 127.0.0.1
