@@ -1,6 +1,6 @@
 ActiveAdmin.register Client do
 
-    permit_params :name, :last_name, :email, :phone
+    permit_params :first_name, :last_name, :email, :phone
 
     index do
 

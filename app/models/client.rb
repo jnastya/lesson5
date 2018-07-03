@@ -5,12 +5,12 @@ class Client < ApplicationRecord
                       :length => { :minimum => 6, :maximum => 10 }
 
     def full_name
-        if name.present? && last_name.present?
-            name + " " + last_name
-        elsif name.blank? && last_name.blank?
+        if first_name.present? && last_name.present?
+            first_name + " " + last_name
+        elsif first_name.blank? && last_name.blank?
             ""
-        else name.blank? || last_name.blank?
-            name.presence || last_name.presence
+        else first_name.blank? || last_name.blank?
+            first_name.presence || last_name.presence
         end
     end
 end
